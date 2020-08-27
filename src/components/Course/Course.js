@@ -15,7 +15,7 @@ const Course = (props) => {
                     <Card.Text>
                         <h2>${price}</h2>
                     </Card.Text>
-                     <Button onClick={()=>props.handleAddProduct(props.course)} variant="warning">{<FontAwesomeIcon icon={faShoppingCart} />}Enroll Now</Button> 
+                     <Button  onClick={()=>props.handleAddProduct(props.course) } variant="warning">{<FontAwesomeIcon icon={faShoppingCart} />}Enroll Now</Button> 
                 </Card.Body>
             </Card>
         </div>

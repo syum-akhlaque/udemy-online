@@ -1,7 +1,8 @@
 import React from 'react';
+import './Cart.css';
+import logo from '../../images/favicon.svg';
 const Cart = (props) => {
     const cart = props.cart;
-    console.log('added',cart);
 
     // const total = cart.reduce((total, product) => total + product.price, 0); 
     let total = 0;
@@ -12,14 +13,13 @@ const Cart = (props) => {
     }
 
     return (
-        <div>
-            
+        <div className="cart">
+            <img src={logo} alt=""/>
             <h4>Order summary</h4>
-            <p>Course Order: {cart.length}</p>
-            <p>Product Price: {total}</p>
-            
-            <p>Total Price: {Number(total).toFixed(2)}</p>
-            
+            <p>Course Purches: {cart.length}</p >
+            <p>Course Price: {total}</p>
+            <h5>Total Price: {Number(total).toFixed(2)}</h5> 
+            <button className="btn btn-warning mt-2 btn-sm">Review your Order</button>
         </div>
     );
 };

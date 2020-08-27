@@ -14,11 +14,11 @@ const Shop = () => {
       setCart(newCart);
     }
     return ( 
-      
-        <div>
+
+        <div >
           <Container fluid>
             <Row>
-              <Col md={10}>
+              <Col md={10} className="bg-light">
                   {
                     courses.map( data => 
                       <Course handleAddProduct={handleAddProduct} course={data}
@@ -26,7 +26,7 @@ const Shop = () => {
                   )
                   }
               </Col>
-              <Col>     
+              <Col className="bg-custom ">     
                 <Cart cart ={cart}></Cart>
               </Col>
             </Row>

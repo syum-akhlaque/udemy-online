@@ -7,9 +7,11 @@ const header = () => {
         <div className='header'>
            <img src={logo} alt=""/>
            <nav>
-               <a href="/shop">shop</a>
+               <a href="/Course">Course</a>
                <a href="/review">Review</a>
                <a href="/manage">Manage</a>
+               <a href="/cart">Cart</a>
+
            </nav>
         </div>
     );
