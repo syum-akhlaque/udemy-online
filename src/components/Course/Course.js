@@ -1,23 +1,23 @@
 import React from 'react';
 import './Course.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { Button,Card} from 'react-bootstrap';
+
 const Course = (props) => {
     const {img, title, price} = props.course;
     return (
         <div className='course'>
-            <div>
-                <img src={img} alt=""/>
-            </div>
-            <div>
-                <h4 className='course-title'>{title}</h4>
-                <br/>
-                <h2>${price}</h2>
-                <br/>
-                 <button className = 'btn' onClick={()=>props.handleAddProduct(props.course)}>{<FontAwesomeIcon icon={faShoppingCart} />}add to cart</button>
-
-            </div>
-           
+            <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={img} />
+                <Card.Body>
+                    <Card.Title>{title}</Card.Title>
+                    <Card.Text>
+                        <h2>${price}</h2>
+                    </Card.Text>
+                     <Button onClick={()=>props.handleAddProduct(props.course)} variant="warning">{<FontAwesomeIcon icon={faShoppingCart} />}Enroll Now</Button> 
+                </Card.Body>
+            </Card>
         </div>
     );
 };

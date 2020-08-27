@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
-// import { Button } from 'react-bootstrap';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button ,Navbar ,Nav,NavDropdown} from 'react-bootstrap';
 import Header from './components/Header/Header'
 import Shop from './components/Shop/Shop';
 function App() {
   return (
     <div className="App">
        <Header></Header>
-       <Shop></Shop>
+       <Shop ></Shop>
     </div>
   );
 }

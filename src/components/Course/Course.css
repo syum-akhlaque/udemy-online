@@ -1,22 +1,9 @@
 .course{
-    display: flex;
-    border-bottom: 1px solid lightgray;
+    display: inline-table;
+    /* border: 1px solid lightgray;  */
+    box-shadow: 1px 0px 20px 0px lightgrey;
     margin-bottom: 5px;
     margin-right: 10px;
-    padding-bottom: 5px;
+    padding:10px 20px 10px 20px;
 }
-.course-title{
-    color: blue;
-    font-weight: 400;
-}
-.btn{
-    background-color: goldenrod;
-    width: 150px;
-    height: 30px;
-    border: 1px solid darkgray;
-    border-radius: 5px;
-}
-.course img{
-    margin-right: 20px;
-    padding: 5px;
-}
+
